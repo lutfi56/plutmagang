@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css">
+    <!--Google Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- End Bootstrap CSS -->
+
+    <!--Custom Css-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <script src="script.js"></script>
+    <!--End Custom Css-->
+</head>
+<style>
+  .nav-link, .dropdown-item{
+    font-weight: bold;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: #6EC1E4;
+}
+</style>
+<body>
+    <!--Header Start-->
+    <header>
+        <!--Navbar Start-->
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container mt-2 mb-2">
+                <a class="navbar-brand d-flex" href="./index.html">
+                    <img src="img/plut.png" alt="" width="54" height="54" class="d-inline-block align-text-top">
+                    <h5 class="ml-4 mr-3 nav-item mx-2"><strong>PLUT-KUMKM <br>KAB. Purworejo</strong></h5>
+                </a>
+                
+                <!-- <img src="img/logo-web.png" alt="" width="192" height="64" class="d-inline-block"> -->
+                
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link mx-2 dropdown-toggle" href="Tentangkami.php" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">Tentang Kami</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="Sejarah.php">Sejarah Kami</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Visimisi.php">Visi & Misi</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Pencapaian.php">Pencapaian</a></li>
+                    </ul>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link mx-2 dropdown-toggle" href="Layanan.php" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Layanan
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="Kelembagaan.php">Bidang Kelembagaan</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="SDM.php">Bidang SDM </a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="Pembiyaan.php">Bidang Pembiyaan</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="Pemasaran.php">Bidang Pemasaran</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="Produksi.php">Bidang Produksi</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link mx-2 dropdown-toggle" href="Ruanginfo.php" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Ruang Info
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="Artikel.php">Artikel, Berita & Pelatihan</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="Kalenderacara.php">Kalender Acara</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-2" aria-current="page" href="user.php">User</a>
+                  </li>
+                </ul>
+            </div>
+          </nav>
+        <!--Navbar End-->
+    </header>
+    <!--Header End-->
+    <!-- WhatsApp Button -->
+    <!-- <div class="whatsapp-button">
+        <a href="https://api.whatsapp.com/send?phone=628123456789" target="_blank" rel="noopener noreferrer">
+            <img src="img/wa.png" alt="WhatsApp" width="50" height="50">
+        </a>
+    </div> -->
+    <style>
+        #btn-back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+          }
+    </style>
+    <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+        <i class="">
+            <div class="whatsapp-button">
+                <a href="https://api.whatsapp.com/send?phone=6289513257271" onclick="return confirm('Anda akan berpindah ke WhatsApp?')" target="_blank" rel="noopener noreferrer">
+                    <img src="img/wa.png" alt="WhatsApp" width="80" height="80">
+                </a>
+            </div>
+        </i>
+    </button>
+
+    <script>
+        let mybutton = document.getElementById("btn-back-to-top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+        scrollFunction();
+        };
+
+        function scrollFunction() {
+        if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+        ) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <div id="carouselExampleCaptions" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="img-fluid w-100 h-100 overflow-hidden"
+                    src="https://dprd-purworejokab.go.id/wp-content/uploads/2022/12/20221206_153839-scaled.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block">
+                    <h5>Foto Halaman Gedung PLUT-KUMKM Kabupaten Purworejo</h5>
+                    <p>Gedung PLUT-KUMKM Kabupaten Purworejo.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid w-100 h-100 overflow-hidden"
+                    src="https://dinkukmp.purworejokab.go.id/asset/foto_berita/Peresmian_PLUT.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block">
+                    <h5>Peresmian Gedung PLUT-KUMKM Kabupaten Purworejo</h5>
+                    <p>Gedung PLUT-KUMKM Kabupaten Purworejo diresmikan.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid w-100 h-100 overflow-hidden"
+                    src="https://dinkukmp.purworejokab.go.id/asset/foto_berita/Penataan_Sarpras_PLUT.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block">
+                    <h5>Pelayanan di PLUT-KUMKM Kabupaten Purworejo</h5>
+                    <p>Pelayanan untuk masyarakat Purworejo.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+
+    <main id="main">
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about mt-5">
+            <div class="container-fluid">
+                <div class="row  pt-5 pb-5">
+                    <div class="container text-center">
+                        <h2>VISI & MISI</h2>
+                        <div class="row align-items-start">
+                          <div class="col">
+                            <p></p>
+                            <h3><strong>VISI</strong></h3>
+                          </div>
+                          <div class="col">
+                            <h3><strong>MISI</strong></h3>
+                        </div>
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <p>
+                                “Terwujudnya Kabupaten Purworejo yang semakin sejahtera berbasis pertanian, pariwisata, industri dan perdagangan yang berwawasan budaya, lingkungan dan ekonomi kerakyatan.”
+                            </p>
+                          </div>
+                          <div class="col" >
+                            <p class="text-sm-start">1. Mewujudkan Kabupaten Purworejo  sebagai kabupaten yang religius dan demokratis;</p>
+                            <p class="text-sm-start">2. Mewujudkan Kabupaten Purworejo sebagai gerbang ekonomi utama bagian selatan Provinsi Jawa Tengah yang berbasis pertanian, pariwisata, industri dan perdagangan;</p>
+                            <p class="text-sm-start">3. Mewujudkan Kebupaten Purworejo sebagai daerah tujuan wisata unggulan berbasis budaya dan kearifan lokal;</p>
+                            <p class="text-sm-start">4. Mewujudkan Kabupaten Purworejo yang unggul di bidang seni, budaya dan olahraga;</p>
+                            <p class="text-sm-start">5. Mewujudkan Kabupaten Purworejo sebagai kabupaten yang unggul di bidang pendidikan dan pelayanan kesehatan;</p>
+                            <p class="text-sm-start">6. Mewujudkan Kabupaten Purworejo menjadi kabupaten yang memiliki aparatur pemerintahan yang mampu melaksanakan tata kelola pemerintahan yang baik, bersih dan partisipatif yang berorientasi pada optimalisasi pelayanan publik;</p>
+                            <p class="text-sm-start">7. Mewujudkan desa di Kabupaten Purworejo sebagai pusat pertumbuhan ekonomi melalui pemberdayaan masyarakat dalam berbagai bidang.</p>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6 offset-md-3"><h3><strong>BACA LEBIH TENTANG KAMI DI :</strong></h3></div>
+                            <div class="content text-center">
+                                <a href="https://youtu.be/D88d_s6iX9s?si=-7ZbhK94TN8Afi0V" class="btn btn-primary">Tentang PLUT Purworejo &#11166; &#11166;</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End About Section -->
+
+        <section>
+            <div class="container course pb-5 pt-5">
+                <h2 class="h1-responsive font-weight-bold text-center my-4">Tim Konsultan PLUT Purworejo</h2>
+                <!--Section description-->
+                <div class="row">
+                    <div class="col-lg-4">
+                      	<div class="card mb-4">
+							<div class="card-body text-center">
+								<img src="./img/avatar1.png" alt="avatar"
+									class="rounded img-fluid" style="width: 350px;">
+								<h5 class="my-3">Rina Gustinawati, SH</h5>
+								<p class="text-muted mb-1">Konsultan Bidang Layanan Kelembagaan</p>
+								<div class="d-flex justify-content-center mb-2 mt-4">
+									<button type="button" class="btn btn-success">Kirim Pesan</button>
+								</div>
+							</div>
+						</div>
+
+                    </div>
+					<div class="col-lg-4">
+						<div class="card mb-4">
+							<div class="card-body text-center">
+								<img src="./img/avatar2.png" alt="avatar"
+									class="rounded img-fluid" style="width: 350px;">
+									<h5 class="my-3">Rina Gustinawati, SH</h5>
+									<p class="text-muted mb-1">Konsultan Bidang Layanan Kelembagaan</p>
+									<div class="d-flex justify-content-center mb-2 mt-4">
+										<button type="button" class="btn btn-success">Kirim Pesan</button>
+									</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="card mb-4">
+							<div class="card-body text-center">
+								<img src="./img/avatar3.png" alt="avatar"
+									class="rounded img-fluid" style="width: 350px;">
+									<h5 class="my-3">Rina Gustinawati, SH</h5>
+									<p class="text-muted mb-1">Konsultan Bidang Layanan Kelembagaan</p>
+									<div class="d-flex justify-content-center mb-2 mt-4">
+										<button type="button" class="btn btn-success">Kirim Pesan</button>
+									</div>
+							</div>
+						</div>
+
+					</div>
+						
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container mb-5">
+                <!--Section: Contact v.2-->
+                <section class="mb-4">
+
+                    <!--Section heading-->
+                    <h2 class="h1-responsive font-weight-bold text-center my-4">Kontak Kami</h2>
+                    <div class="row align-items-start">
+                        <div class="col">
+                          Kontak
+                          <p></p>
+                          <p class="text-sm-start">Telp     : (0275) 321018, 321028</p>
+                          <p class="text-sm-start">Fax   : (0275) 321028</p>
+                          <p class="text-sm-start">Email    :  dinkukmp@purworejokab.go.id / dinkukmp.pwr@gmail.com</p>
+                        </div>
+                        <div class="col">
+                            <div class="col-md-6 text-center">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.429892172654!2d110.0010988!3d-7.7441426999999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7ae903e1946239%3A0x553298296d8389a3!2sPLUT%20KUMKM%20Kab%20Purworejo!5e0!3m2!1sid!2sid!4v1700099243614!5m2!1sid!2sid"
+                                    width="600" height="300px" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                      </div>
+                        <!--Grid column-->
+						<div class="col mt-5">
+							<div class="text-center my-4 mb-5 mt-5">
+								<a href="#download" class="btn btn-success">Download PLUT Profile</a>
+							</div>
+						</div>
+
+						<div class="col-lg-12" >
+							<div class="text-center m-2">
+								<img src="img/plut.png" width="50" class="rounded" alt="...">
+								<img src="img/plut.png" width="50" class="rounded" alt="...">
+							</div>
+						
+							<p class="my-4 text-black-50 text-center"><small>Situs Dibuat Dengan Kemitraan</small></p>
+							
+						</div>
+
+                    </div>
+
+                </section>
+                <!--Section: Contact v.2-->
+            </div>
+        </section>
+	</main>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light py-3 text-black mt-5">
+		<!-- Copyright -->
+	   <div class="text-center py-2">
+		   © 2023 Copyright:
+		   <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Lutfi Dhani Permadi</a>
+	   </div>
+		   <!-- Copyright -->
+   </footer>
+	   <!-- Footer -->
+	   <!-- Option 1: Bootstrap Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
